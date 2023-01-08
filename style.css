@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;500;600&display=swap');
+
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+:root {
+        --primaryColor: #EBD5B8;
+        --seconderyColor: #CC402E;
+        --commonColor: white;
+        --fontHead: 40px;
+}
+
+body {
+        font-family: 'League Spartan',
+                sans-serif;
+}
+
+li {
+        list-style: none;
+}
+
+a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--seconderyColor);
+        font-weight: 600;
+}
+
+.container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 30px 0;
+}
+
+/* Header Start */
+header {
+        margin: auto;
+        background-color: var(--primaryColor);
+        color: var(--seconderyColor);
+}
+
+h1 {
+        padding-bottom: 20px;
+}
+
+/* Navbar Start */
+
+nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+}
+
+.logo {
+        text-transform: uppercase;
+        width: 30px;
+        color: var(--seconderyColor);
+}
+
+.navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.nav__items {
+        display: flex;
+        width: 350px;
+        justify-content: space-around;
+}
+
+.social__media {
+        display: flex;
+        width: 100px;
+        justify-content: space-around;
+        padding-left: 15px;
+}
+
+.social__media .icon {
+        font-size: 23px;
+        color: var(--seconderyColor);
+}
+
+.button {
+        padding-left: 20px;
+}
+
+.button button {
+        border: none;
+        padding: 10px 20px;
+        padding-top: 12px;
+        border-radius: 20px;
+        background-color: var(--seconderyColor);
+        font-family: 'League Spartan';
+        font-weight: 600;
+        color: var(--commonColor);
+}
+
+/* Navbar End */
+
+/* Hero Section Start */
+.hero__section {
+        max-height: 578px;
+        padding-top: 70px;
+}
+
+.top__section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: var(--fontHead);
+        text-transform: uppercase;
+}
+
+.top__section img {
+        max-width: 350px;
+}
+
+.bottom__text {
+        width: 450px;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+}
+
+.bottom__text p {
+        padding-right: 60px;
+}
+
+.border {
+        background-color: var(--seconderyColor);
+        width: 70px;
+        height: 2px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: 190px;
+}
+
+/* Header End */
+
+/* Story Section Start */
+.story {
+        background-color: var(--seconderyColor);
+        color: var(--commonColor);
+}
+
+.story__title {
+        font-size: var(--fontHead);
+}
+
+.story p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+}
+
+/* Story Section End */
+
+/* Team Section Start */
+
+.team {
+        background-color: var(--primaryColor);
+        color: var(--seconderyColor);
+}
+
+.team__title {
+        font-size: var(--fontHead);
+        text-transform: uppercase;
+}
+
+.team__membar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+}
+
+.team__membar img {
+        width: 300px;
+        padding: 10px;
+}
+
+/* Team Section End */
