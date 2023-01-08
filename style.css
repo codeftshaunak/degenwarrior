@@ -184,3 +184,8 @@ nav {
 }
 
 /* Team Section End */
+
+.details {
+        background-color: var(--seconderyColor);
+        color: var(--commonColor);
+}
