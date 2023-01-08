@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;500;600&display=swap');
 
+@font-face {
+        font-family: "Japanese";
+        src: url(./font/Japanese.ttf);
+}
+
 * {
         padding: 0;
         margin: 0;
@@ -32,7 +37,7 @@ a {
 .container {
         max-width: 1000px;
         margin: auto;
-        padding: 30px 0;
+        padding: 50px 0;
 }
 
 /* Header Start */
@@ -59,6 +64,7 @@ nav {
         text-transform: uppercase;
         width: 30px;
         color: var(--seconderyColor);
+        font-family: "Japanese";
 }
 
 .navbar {
@@ -114,6 +120,7 @@ nav {
         justify-content: space-around;
         font-size: var(--fontHead);
         text-transform: uppercase;
+        font-family: "Japanese";
 }
 
 .top__section img {
@@ -150,18 +157,20 @@ nav {
 
 .story__title {
         font-size: var(--fontHead);
+        font-family: "Japanese";
+        font-weight: 500
 }
 
 .story p {
         font-weight: 300;
         font-size: 20px;
-        line-height: 25px;
+        line-height: 35px;
+        letter-spacing: 2px;
 }
 
 /* Story Section End */
 
 /* Team Section Start */
-
 .team {
         background-color: var(--primaryColor);
         color: var(--seconderyColor);
@@ -170,6 +179,8 @@ nav {
 .team__title {
         font-size: var(--fontHead);
         text-transform: uppercase;
+        font-family: "Japanese";
+        font-weight: 500
 }
 
 .team__membar {
@@ -203,4 +214,137 @@ nav {
 /* Team Section End */
 
 /* Faq Design Start */
+.faq {
+        background-color: var(--primaryColor);
+        color: var(--seconderyColor);
+}
+
+
+.accordion {
+        padding: 10px;
+        margin: auto;
+}
+
+.accordion .accordion-item {
+        /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+        padding: 15px 0;
+        margin: 0 30px;
+        border-radius: 10px;
+}
+
+.accordion .accordion-item button[aria-expanded=true] {
+        /*   border-bottom: 1px solid #03b5d2; */
+}
+
+.accordion h2 {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        /*    padding: 1em 0; */
+        color: var(--seconderyColor);
+        font-size: 30px;
+        font-weight: 400;
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0px;
+        line-height: 25px;
+        margin: 0px;
+        font-family: "Japanese";
+}
+
+.accordion h2:hover,
+.accordion h2:focus {
+        cursor: pointer;
+        /* color: #03b5d2; */
+}
+
+.accordion h2:hover::after,
+.accordion h2:focus::after {
+        cursor: pointer;
+        color: var(--primaryColor);
+        /* border: 1px solid #03b5d2; */
+        background-color: var(--seconderyColor);
+}
+
+.accordion h2 .accordion-title {
+        padding: 1em 1.5em 1em 0;
+}
+
+.accordion h2 .icon {
+        display: inline-block;
+        position: absolute;
+        top: 2px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+        margin: 30px;
+}
+
+.faq-content {
+        padding: 80px 0px;
+}
+
+.accordion h2 .icon::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+}
+
+.accordion h2 .icon::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+}
+
+.accordion h2[aria-expanded=true] {
+        color: var(--primaryColor);
+        background-color: var(--seconderyColor);
+        padding: 30px 30px 0px 30px;
+}
+
+.accordion h2[aria-expanded=true] .icon::after {
+        width: 0;
+}
+
+.accordion h2[aria-expanded=true]+.accordion-content {
+        opacity: 1;
+        max-height: 5000px;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+        background-color: var(--seconderyColor);
+        color: var(--primaryColor);
+        padding: 30px;
+}
+
+.accordion .accordion-content p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0px;
+        margin-top: 10px;
+}
+
 /* Faq Design End */
+
+/* Footer Start */
