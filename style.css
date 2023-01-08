@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;500;600;700;800;900&display=swap');
 
 @font-face {
         font-family: "Japanese";
@@ -15,7 +15,7 @@
         --primaryColor: #EBD5B8;
         --seconderyColor: #CC402E;
         --commonColor: white;
-        --fontHead: 40px;
+        --fontHead: 60px;
 }
 
 body {
@@ -31,13 +31,19 @@ a {
         text-decoration: none;
         text-transform: uppercase;
         color: var(--seconderyColor);
-        font-weight: 600;
 }
 
 .container {
-        max-width: 1000px;
+        max-width: 1100px;
         margin: auto;
-        padding: 50px 0;
+        padding: 40px 0;
+}
+
+hr {
+        color: #EBD5B8;
+        background: #EBD5B8;
+        height: 2px;
+        border: none;
 }
 
 /* Header Start */
@@ -57,7 +63,7 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 75px;
+        height: 50px;
 }
 
 .logo {
@@ -75,36 +81,57 @@ nav {
 
 .nav__items {
         display: flex;
-        width: 350px;
+        width: 550px;
         justify-content: space-around;
+}
+
+.list__item {
+        font-size: 20px;
+        font-weight: 700;
 }
 
 .social__media {
         display: flex;
         width: 100px;
         justify-content: space-around;
-        padding-left: 15px;
+        padding-left: 20px;
 }
 
 .social__media .icon {
-        font-size: 23px;
+        font-size: 29px;
         color: var(--seconderyColor);
 }
 
 .button {
-        padding-left: 20px;
+        padding-left: 35px;
 }
 
 .button button {
         border: none;
-        padding: 10px 20px;
-        padding-top: 12px;
+        /* padding: 10px 20px; */
+        padding-top: 5px;
+        font-size: 20px;
+        height: 42px;
         border-radius: 20px;
         background-color: var(--seconderyColor);
         font-family: 'League Spartan';
-        font-weight: 600;
-        color: var(--commonColor);
+        font-weight: 700;
+        color: var(--primaryColor);
+        width: 110px;
 }
+
+.bar {
+        width: 30px;
+        height: 5px;
+        background-color: var(--seconderyColor);
+        margin-top: 3px;
+}
+
+.bars {
+        display: none;
+}
+
+
 
 /* Navbar End */
 
@@ -118,13 +145,13 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        font-size: var(--fontHead);
+        font-size: 40px;
         text-transform: uppercase;
         font-family: "Japanese";
 }
 
 .top__section img {
-        max-width: 350px;
+        max-width: 400px;
 }
 
 .bottom__text {
@@ -155,6 +182,16 @@ nav {
         color: var(--commonColor);
 }
 
+.story__details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.story__details img {
+        width: 350px;
+}
+
 .story__title {
         font-size: var(--fontHead);
         font-family: "Japanese";
@@ -164,8 +201,7 @@ nav {
 .story p {
         font-weight: 300;
         font-size: 20px;
-        line-height: 35px;
-        letter-spacing: 2px;
+        line-height: 30px;
 }
 
 /* Story Section End */
@@ -180,7 +216,7 @@ nav {
         font-size: var(--fontHead);
         text-transform: uppercase;
         font-family: "Japanese";
-        font-weight: 500
+        font-weight: 500;
 }
 
 .team__membar {
@@ -198,7 +234,8 @@ nav {
 
 .details {
         background-color: var(--seconderyColor);
-        color: var(--commonColor);
+        color: #EBD5B8;
+        padding: 30px;
 }
 
 .all__details {
@@ -207,15 +244,15 @@ nav {
         padding: 30px 0;
 }
 
-.all__details p {
-        font-weight: 100;
+.details__item {
+        padding: 40px 0;
 }
 
 /* Team Section End */
 
 /* Faq Design Start */
 .faq {
-        background-color: var(--primaryColor);
+        background-color: #E4C59C;
         color: var(--seconderyColor);
 }
 
@@ -236,22 +273,23 @@ nav {
         /*   border-bottom: 1px solid #03b5d2; */
 }
 
+.number {
+        font-size: 35px;
+        padding: 20px;
+}
+
 .accordion h2 {
         position: relative;
         display: block;
         text-align: left;
-        width: 100%;
-        /*    padding: 1em 0; */
+        width: 90%;
         color: var(--seconderyColor);
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 400;
-        border: none;
-        background: none;
-        outline: none;
-        padding: 0px;
-        line-height: 25px;
-        margin: 0px;
         font-family: "Japanese";
+        margin: auto;
+        padding: 20px;
+
 }
 
 .accordion h2:hover,
@@ -336,15 +374,94 @@ nav {
         background-color: var(--seconderyColor);
         color: var(--primaryColor);
         padding: 30px;
+        width: 90%;
+        margin: auto;
 }
 
 .accordion .accordion-content p {
-        font-size: 1rem;
+        font-size: 20px;
         font-weight: 300;
         margin: 0px;
         margin-top: 10px;
+        padding-left: 30px;
 }
 
 /* Faq Design End */
 
 /* Footer Start */
+
+.footer {
+        height: 130px;
+        background-color: var(--seconderyColor);
+}
+
+
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 1000px) {
+        .container {
+                width: 90%;
+        }
+}
+
+@media only screen and (max-width: 950px) {
+        .top__section img {
+                max-width: 300px;
+        }
+
+        .top__section {
+                font-size: 30px;
+        }
+
+}
+
+@media only screen and (max-width: 800px) {
+        .top__section img {
+                max-width: 200px;
+        }
+
+        .top__section {
+                font-size: 20px;
+        }
+
+        .bars {
+                display: block;
+                cursor: pointer;
+                z-index: 1000;
+        }
+
+        .navbar {
+                display: none;
+        }
+
+        .active__navbar {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 0;
+                background-color: var(--commonColor);
+        }
+
+        .active__navbar .nav__items {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+        }
+
+        .list__item {
+                padding: 10px;
+        }
+
+        .social__media {
+                display: none;
+        }
+
+        .button {
+                display: none;
+        }
+
+}

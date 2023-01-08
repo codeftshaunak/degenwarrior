@@ -13,3 +13,11 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+//responsive navbar
+const bars = document.getElementById('bar');
+const navbar = document.getElementById('navbar');
+
+bars.onclick = function () {
+        navbar.classList.toggle("active__navbar")
+}
