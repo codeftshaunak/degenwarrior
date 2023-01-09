@@ -58,6 +58,7 @@ hr {
 header {
         background-color: var(--primaryColor);
         color: var(--seconderyColor);
+        height: 100vh;
 }
 
 h1 {
@@ -75,9 +76,13 @@ nav {
 
 .logo {
         text-transform: uppercase;
-        width: 30px;
+        width: 100px;
         color: var(--seconderyColor);
         font-family: "Japanese";
+}
+
+.logo img {
+        width: 100%;
 }
 
 .navbar {
@@ -95,7 +100,7 @@ nav {
 }
 
 .list__item {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
 }
 
@@ -188,20 +193,22 @@ nav {
 .bottom__text {
         text-align: center;
         margin: auto;
-        padding-top: 62px;
-        width: 40%;
+        padding-top: 82px;
+        width: 45%;
+        line-height: 22px;
+        font-weight: 400;
         /* padding-right: 40px; */
 }
 
 .bottom__text p {
-        /* padding-right: 60px; */
+        font-size: 18px;
 }
 
 .border {
         background-color: var(--seconderyColor);
         width: 70px;
         height: 2px;
-        margin: 20px auto;
+        margin: 10px auto;
 }
 
 /* Header End */
