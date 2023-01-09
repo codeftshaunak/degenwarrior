@@ -166,25 +166,30 @@ nav {
         font-size: 36px;
         text-transform: uppercase;
         font-family: "Japanese";
+        width: 100%;
+        margin: auto;
 }
 
+
 .top__section img {
-        max-width: 350px;
-        /* margin-right: -11px; */
-        margin-left: auto;
-        margin-right: auto;
         display: block;
+        width: 70%;
+        margin: auto;
 }
 
 .right__text {
-        /* padding-left: 15px; */
+        width: 15%;
+}
+
+.left__text {
+        width: 15%;
 }
 
 .bottom__text {
-        width: 500px;
         text-align: center;
         margin: auto;
         padding: 20px;
+        width: 40%;
         /* padding-right: 40px; */
 }
 
@@ -196,11 +201,7 @@ nav {
         background-color: var(--seconderyColor);
         width: 70px;
         height: 2px;
-        /* margin-top: 10px; */
-        margin-left: auto;
-        margin-right: 180px;
-        margin: auto;
-        margin-top: 20px;
+        margin: 20px auto;
 }
 
 /* Header End */
