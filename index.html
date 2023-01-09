@@ -25,21 +25,23 @@
                                                         <a href="#">Home</a>
                                                 </li>
                                                 <li class="list__item">
-                                                        <a href="#">About</a>
+                                                        <a href="#story">About</a>
                                                 </li>
                                                 <li class="list__item">
-                                                        <a href="#">Story</a>
+                                                        <a href="#team">Team</a>
                                                 </li>
+                                                <!-- <li class="list__item">
+                                                        <a href="#info">Info</a>
+                                                </li> -->
+
                                                 <li class="list__item">
-                                                        <a href="#">Team</a>
-                                                </li>
-                                                <li class="list__item">
-                                                        <a href="#">Faq</a>
+                                                        <a href="#faq">Faq</a>
                                                 </li>
                                         </ul>
                                         <div class="social__media">
-                                                <div class="icon"><i class="fa-brands fa-twitter"></i></div>
-                                                <div class="icon"><i class="fa-sharp fa-solid fa-sailboat"></i></div>
+                                                <div class="icon"><img src="./images/twiteer.png" alt=""></div>
+                                                <div class="icon" id="opensea"><img src="./images/opensea.png" alt="">
+                                                </div>
                                         </div>
                                         <div class="button">
                                                 <button>MINT</button>
@@ -68,11 +70,11 @@
                                 </div>
 
                                 <div class="bottom__text">
-                                        <p>In a world where monsters and characters rule, there is only one place you
-                                                can truly
-                                                call home. Join your Degen
-                                                Warriors and get set for the adventure
+                                        <p>Unleashing 1366 ancient Chinese warriors on the Ethereum blockchain for the
+                                                Chinese New Year 2023. Collect and defend your kingdom with the Degen
+                                                Warriors.
                                         </p>
+                                        
                                         <div class="border"></div>
                                 </div>
                         </section>
@@ -82,10 +84,10 @@
         <!-- Header Section End -->
 
         <!-- Story Section Start -->
-        <section class="story">
+        <section class="story" id="story">
                 <div class="container">
 
-                        <h1 class="story__title">STORY</h1>
+                        <h1 class="story__title">About</h1>
                         <div class="story__details">
                                 <div class="text">
                                         <p>
@@ -133,7 +135,7 @@
 
 
         <!-- Team Section Start -->
-        <div class="team">
+        <div class="team" id="team">
                 <div class="container">
                         <h1 class="team__title">TEAM</h1>
                         <div class="team__membar">
@@ -141,14 +143,14 @@
                                 <img src="./images/hero2.png" alt="hero">
                                 <img src="./images/hero4.png" alt="hero">
                                 <img src="./images/hero3.png" alt="hero">
-                                <img src="./images/hero5.png" alt="hero">
+                                <!-- <img src="./images/hero5.png" alt="hero"> -->
                         </div>
                 </div>
         </div>
         <!-- Team Section End  -->
 
         <!-- Details Section Start -->
-        <div class="details">
+        <div class="details" id="info">
                 <div class="container">
                         <div class="team__title">MINT DETAILS</div>
                         <div class="all__details">
@@ -161,8 +163,12 @@
                                         <h1 class="team__title">22 jan</h1>
                                 </div>
                                 <div class="details__item">
-                                        <p>Price (ETH)</p>
-                                        <h1 class="team__title">0.05</h1>
+                                        <p>WL Sale(ETH)</p>
+                                        <h1 class="team__title">-</h1>
+                                </div>
+                                <div class="details__item">
+                                        <p>Public Sale(ETH)</p>
+                                        <h1 class="team__title">-</h1>
                                 </div>
                         </div>
                 </div>
@@ -170,61 +176,56 @@
         <!-- Details Section End -->
 
         <!-- Faq Section Start -->
-        <div class="faq">
-                <div class="container">
+        <div class="faq__all" id="faq">
+                <div class="faq__faq">
                         <div class="team__title">FAQ</div>
                 </div>
+                <div class="faq__scroll">
+                        <div class="accordion">
+                                <div class="accordion-item">
+                                        <h2 id="accordion-button-1" aria-expanded="false">
+                                                <span class="number">01</span>
+                                                <span class="accordion-title">What is Degen Warriors?</span><span
+                                                        class="icon" aria-hidden="true">
+                                                </span>
+                                        </h2>
+                                        <div class="accordion-content">
+                                                <p>Degen Warriors is an immaculate collection of 1366 digital warriors
+                                                        unleashing their power on this Chinese New Year 2023.</p>
+                                        </div>
+                                        <hr>
+                                </div>
+                                <div class="accordion-item">
+                                        <h2 id="accordion-button-1" aria-expanded="false">
+                                                <span class="number">02</span>
+                                                <span class="accordion-title">When will the mint details be shared?
+                                                </span><span class="icon" aria-hidden="true"></span>
+                                        </h2>
+                                        <div class="accordion-content">
+                                                <p>Mint details will be published on our Twitter page 1-2 days before
+                                                        our sale. Don't believe anywhere except our Twitter page.</p>
+                                        </div>
+                                        <hr>
+                                </div>
+                                <div class="accordion-item">
+                                        <h2 id="accordion-button-1" aria-expanded="false">
+                                                <span class="number">03</span>
+                                                <span class="accordion-title">When will the NFTs be revealed?
 
-                <div class="accordion">
-                        <div class="accordion-item">
-                                <h2 id="accordion-button-1" aria-expanded="false">
-                                        <span class="number">01</span>
-                                        <span class="accordion-title">Alright, But What Exactly Do You
-                                                Do?</span><span class="icon" aria-hidden="true">
-                                        </span>
-                                </h2>
-                                <div class="accordion-content">
-                                        <p>As a creative agency we work with you to develop solutions to address your
-                                                brand needs. That includes various aspects of brand planning and
-                                                strategy, marketing and design.</p>
-                                </div>
-                                <hr>
-                        </div>
-                        <div class="accordion-item">
-                                <h2 id="accordion-button-1" aria-expanded="false">
-                                        <span class="number">02</span>
-                                        <span class="accordion-title">I don't
-                                                need a brand strategist but I
-                                                need help executing an upcoming campaign. Can we still work
-                                                together?</span><span class="icon" aria-hidden="true"></span>
-                                </h2>
-                                <div class="accordion-content">
-                                        <p>As a creative agency we work with you to develop solutions to address your
-                                                brand needs. That includes various aspects of brand planning and
-                                                strategy, marketing and design.</p>
-                                </div>
-                                <hr>
-                        </div>
-                        <div class="accordion-item">
-                                <h2 id="accordion-button-1" aria-expanded="false">
-                                        <span class="number">03</span>
-                                        <span class="accordion-title">Are your
-                                                rates competitive?
-                                        </span><span class="icon" aria-hidden="true"></span>
-                                </h2>
-                                <div class="accordion-content">
-                                        <p>As a creative agency we work with you to develop solutions to address your
-                                                brand needs. That includes various aspects of brand planning and
-                                                strategy, marketing and design.</p>
+                                                </span><span class="icon" aria-hidden="true"></span>
+                                        </h2>
+                                        <div class="accordion-content">
+                                                <p>NFTs will be revealed right after the mint ends.
+                                                </p>
+                                        </div>
                                 </div>
                         </div>
                 </div>
-
         </div>
         <!-- Faq Section End -->
 
         <div class="footer">
-
+                <p>Degen Warriors 2023. All Rights Reserved.</p>
         </div>
 
         <script src="./script.js"></script>

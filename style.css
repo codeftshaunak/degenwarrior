@@ -2,7 +2,9 @@
 
 @font-face {
         font-family: "Japanese";
-        src: url(./font/Japanese.ttf);
+        src: url(./font/gunji.ttf);
+        /* src: url(./font/chineese.ttf); */
+        /* src: url(./font/Japanese.ttf); */
 }
 
 * {
@@ -18,9 +20,14 @@
         --fontHead: 60px;
 }
 
+html {
+        scroll-behavior: smooth;
+}
+
 body {
         font-family: 'League Spartan',
                 sans-serif;
+        transition: 0.3s ease-in-out;
 }
 
 li {
@@ -36,7 +43,8 @@ a {
 .container {
         max-width: 1100px;
         margin: auto;
-        padding: 40px 0;
+        padding-top: 20px;
+        padding-bottom: 40px;
 }
 
 hr {
@@ -48,7 +56,6 @@ hr {
 
 /* Header Start */
 header {
-        margin: auto;
         background-color: var(--primaryColor);
         color: var(--seconderyColor);
 }
@@ -77,47 +84,58 @@ nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 900px;
 }
 
 .nav__items {
         display: flex;
         width: 550px;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        font-family: "Japanese";
 }
 
 .list__item {
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 600;
 }
 
 .social__media {
         display: flex;
-        width: 100px;
+        width: 105px;
         justify-content: space-around;
-        padding-left: 20px;
+        align-items: center;
+        padding-top: 7px;
 }
 
 .social__media .icon {
-        font-size: 29px;
+        font-size: 24px;
         color: var(--seconderyColor);
 }
 
-.button {
-        padding-left: 35px;
+.icon img {
+        width: 24px;
+        cursor: pointer;
 }
+
+#opensea {
+        opacity: 0.6;
+        cursor: no-drop;
+}
+
+/* .button {} */
 
 .button button {
         border: none;
         /* padding: 10px 20px; */
         padding-top: 5px;
-        font-size: 20px;
+        font-size: 18px;
         height: 42px;
         border-radius: 20px;
         background-color: var(--seconderyColor);
         font-family: 'League Spartan';
-        font-weight: 700;
         color: var(--primaryColor);
         width: 110px;
+
 }
 
 .bar {
@@ -144,34 +162,45 @@ nav {
 .top__section {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        font-size: 40px;
+        justify-content: space-evenly;
+        font-size: 36px;
         text-transform: uppercase;
         font-family: "Japanese";
 }
 
 .top__section img {
-        max-width: 400px;
+        max-width: 350px;
+        /* margin-right: -11px; */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+}
+
+.right__text {
+        /* padding-left: 15px; */
 }
 
 .bottom__text {
-        width: 450px;
+        width: 500px;
         text-align: center;
         margin: auto;
         padding: 20px;
+        /* padding-right: 40px; */
 }
 
 .bottom__text p {
-        padding-right: 60px;
+        /* padding-right: 60px; */
 }
 
 .border {
         background-color: var(--seconderyColor);
         width: 70px;
         height: 2px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         margin-left: auto;
-        margin-right: 190px;
+        margin-right: 180px;
+        margin: auto;
+        margin-top: 20px;
 }
 
 /* Header End */
@@ -179,7 +208,7 @@ nav {
 /* Story Section Start */
 .story {
         background-color: var(--seconderyColor);
-        color: var(--commonColor);
+        color: #EBD5B8;
 }
 
 .story__details {
@@ -188,8 +217,15 @@ nav {
         justify-content: space-between;
 }
 
+.text {
+        width: 705px;
+        text-align: justify;
+        color: #EBD5B8;
+}
+
 .story__details img {
-        width: 350px;
+        width: 260px;
+        height: 100%;
 }
 
 .story__title {
@@ -226,8 +262,8 @@ nav {
 }
 
 .team__membar img {
-        width: 300px;
-        padding: 10px;
+        width: 270px;
+        padding: 20px;
 }
 
 /* Team Section End */
@@ -235,7 +271,8 @@ nav {
 .details {
         background-color: var(--seconderyColor);
         color: #EBD5B8;
-        padding: 30px;
+        padding-top: 30px;
+        padding-bottom: 0;
 }
 
 .all__details {
@@ -251,11 +288,25 @@ nav {
 /* Team Section End */
 
 /* Faq Design Start */
-.faq {
+/* .faq {
         background-color: #E4C59C;
+} */
+
+.faq__faq {
+        background-color: #EBD5B8;
         color: var(--seconderyColor);
+        margin: auto;
+        padding: 30px 0;
 }
 
+.faq__faq .team__title {
+        width: 1000px;
+        margin: auto;
+}
+
+.faq__scroll {
+        background-color: #E4C59C;
+}
 
 .accordion {
         padding: 10px;
@@ -274,8 +325,8 @@ nav {
 }
 
 .number {
-        font-size: 35px;
-        padding: 20px;
+        /* font-size: 35px;
+        padding: 20px; */
 }
 
 .accordion h2 {
@@ -286,9 +337,9 @@ nav {
         color: var(--seconderyColor);
         font-size: 25px;
         font-weight: 400;
-        font-family: "Japanese";
         margin: auto;
         padding: 20px;
+
 
 }
 
@@ -307,13 +358,17 @@ nav {
 }
 
 .accordion h2 .accordion-title {
-        padding: 1em 1.5em 1em 0;
+        padding: 1em 1.5em 1em 30px;
+        /* position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1; */
 }
 
 .accordion h2 .icon {
         display: inline-block;
         position: absolute;
-        top: 2px;
+        top: -8px;
         right: 0;
         width: 22px;
         height: 22px;
@@ -330,7 +385,7 @@ nav {
         display: block;
         position: absolute;
         content: "";
-        top: 9px;
+        top: 9px !important;
         left: 5px;
         width: 10px;
         height: 2px;
@@ -373,7 +428,7 @@ nav {
         will-change: opacity, max-height;
         background-color: var(--seconderyColor);
         color: var(--primaryColor);
-        padding: 30px;
+        padding: 10px 90px;
         width: 90%;
         margin: auto;
 }
@@ -382,8 +437,9 @@ nav {
         font-size: 20px;
         font-weight: 300;
         margin: 0px;
-        margin-top: 10px;
-        padding-left: 30px;
+        /* margin-top: 10px; */
+        line-height: 30px;
+
 }
 
 /* Faq Design End */
@@ -393,6 +449,11 @@ nav {
 .footer {
         height: 130px;
         background-color: var(--seconderyColor);
+        text-align: center;
+        color: #EBD5B8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 
