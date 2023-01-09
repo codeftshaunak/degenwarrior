@@ -84,7 +84,7 @@ nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 900px;
+        width: 76%;
 }
 
 .nav__items {
@@ -188,7 +188,7 @@ nav {
 .bottom__text {
         text-align: center;
         margin: auto;
-        padding: 20px;
+        padding-top: 62px;
         width: 40%;
         /* padding-right: 40px; */
 }
@@ -448,7 +448,7 @@ nav {
 /* Footer Start */
 
 .footer {
-        height: 130px;
+        height: 75px;
         background-color: var(--seconderyColor);
         text-align: center;
         color: #EBD5B8;
