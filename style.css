@@ -89,7 +89,7 @@ nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 76%;
+        width: 84%;
 }
 
 .nav__items {
@@ -127,6 +127,8 @@ nav {
         cursor: no-drop;
 }
 
+
+
 /* .button {} */
 
 .button button {
@@ -146,15 +148,18 @@ nav {
 .bar {
         width: 30px;
         height: 5px;
-        background-color: var(--seconderyColor);
+        background-color: var(--commonColor);
         margin-top: 3px;
+        border-radius: 5px;
 }
 
 .bars {
         display: none;
 }
 
-
+.mobile__navbar {
+        display: none;
+}
 
 /* Navbar End */
 
@@ -310,7 +315,7 @@ nav {
 }
 
 .faq__faq .team__title {
-        width: 1000px;
+        max-width: 1000px;
         margin: auto;
 }
 
@@ -349,8 +354,6 @@ nav {
         font-weight: 400;
         margin: auto;
         padding: 20px;
-
-
 }
 
 .accordion h2:hover,
@@ -369,10 +372,7 @@ nav {
 
 .accordion h2 .accordion-title {
         padding: 1em 1.5em 1em 30px;
-        /* position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: 1; */
+        text-align: left;
 }
 
 .accordion h2 .icon {
@@ -469,30 +469,139 @@ nav {
 
 
 /* Mobile Responsiveness */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
         .container {
-                width: 90%;
+                max-width: 90%;
         }
 }
 
 @media only screen and (max-width: 950px) {
-        .top__section img {
-                max-width: 300px;
+
+        .hero__section {
+                padding-top: 40px;
         }
 
         .top__section {
-                font-size: 30px;
+                margin: auto;
+                width: 100%;
+                flex-wrap: wrap;
+                flex-direction: column;
+                text-align: center;
+        }
+
+        /* 
+        .top__section img {
+                display: block;
+                width: 250px;
+                margin: auto;
+        } */
+
+        .right__text {
+                width: 100%;
+                margin-top: 10px;
+        }
+
+        .left__text {
+                width: 100%;
+        }
+
+        .story__details {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+        }
+
+        .story__details .text {
+                padding-top: 30px;
+                width: 90%;
+        }
+
+        .all__details {
+                flex-wrap: wrap;
+                text-align: center;
+        }
+
+        .details__item {
+                padding: 20px 0;
+                width: 300px;
+                margin: auto;
+        }
+
+        .accordion h2 {
+                width: 100%;
+                position: relative;
+        }
+
+        .accordion .accordion-content {
+                padding: 10px 60px;
+                width: 100% !important;
+        }
+
+        .accordion h2 .accordion-title {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 30px;
+                padding-left: 10px;
+                text-align: left;
+                position: absolute;
+                top: 0;
+                left: 45px;
+                bottom: 0;
+                z-index: 1;
+        }
+
+        .accordion-content p {
+                padding-top: 30px;
+        }
+
+        .number {
+                position: absolute;
+                padding: 10px;
+                top: 0;
+                left: 0;
+                z-index: 1;
+        }
+
+        .accordion h2 .icon {
+                z-index: 1;
+                top: -17px;
+                right: -20px;
+        }
+
+        /* .accordion h2 .icon {
+        display: inline-block;
+        position: absolute;
+       
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+        margin: 30px;
+} */
+
+
+        .story__title {
+                text-align: center;
+        }
+
+        .team__title {
+                text-align: center;
+        }
+
+        h1 {
+                text-align: center;
+        }
+
+        hr {
+                margin-top: 25px;
         }
 
 }
 
 @media only screen and (max-width: 800px) {
-        .top__section img {
-                max-width: 200px;
-        }
 
-        .top__section {
-                font-size: 20px;
+        header {
+                height: 100%;
         }
 
         .bars {
@@ -500,6 +609,32 @@ nav {
                 cursor: pointer;
                 z-index: 1000;
         }
+
+        nav .logo {
+                display: none
+        }
+
+        nav {
+                padding: 0;
+                height: 0;
+        }
+
+        header .container {
+                max-width: 100% !important;
+                padding-top: 0;
+        }
+
+
+
+        .mobile__navbar {
+                display: flex;
+                background-color: #CC402E;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+        }
+
 
         .navbar {
                 display: none;
@@ -534,5 +669,27 @@ nav {
         .button {
                 display: none;
         }
+
+
+        .top__section {
+                font-size: 20px;
+        }
+
+        .bottom__text {
+                display: none;
+        }
+
+        .story__title {
+                text-align: center;
+        }
+
+        .team__title {
+                text-align: center;
+        }
+
+        h1 {
+                text-align: center;
+        }
+
 
 }
